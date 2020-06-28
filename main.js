@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // find elements
 var banner = $("#banner-message")
 var button = $("button")
@@ -6,3 +8,4 @@ var button = $("button")
 button.on("click", () => {
   banner.toggleClass("alt")
 })
+});
