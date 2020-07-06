@@ -5,13 +5,10 @@ var banner = $("#banner-message")
 var button = $("button")
 
 // handle click and add class
-button.on("click", () => {
+button.on("click", function(e) {
   banner.toggleClass("alt")
-})
-});
-
-$('#one').click(function() {
-  console.log('hello');
-  const audio = new Audio("one.mp4");
+  var e = (e.currentTarget.id);
+  const audio = new Audio(e + ".mp4");
   audio.play();
+})
 });
