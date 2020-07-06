@@ -9,3 +9,9 @@ button.on("click", () => {
   banner.toggleClass("alt")
 })
 });
+
+$('#one').click(function() {
+  console.log('hello');
+  const audio = new Audio("one.mp4");
+  audio.play();
+});
